@@ -1,0 +1,21 @@
+{
+    "name": "sargilla/dolly",
+    "description": "Caching for Laravel",
+    "license": "MIT",
+    "keywords": ["laravel","cache"],
+    "authors": [
+        {
+            "name": "santiago argilla",
+            "email": "sargilla@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sargilla\\Dolly\\": "src/"
+        }
+    }
+}
