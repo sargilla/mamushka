@@ -17,5 +17,11 @@
         "psr-4": {
             "Sargilla\\Dolly\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "classmap": ["tests/TestCase.php"]
+    },
+    "require-dev": {
+        "illuminate/database": "^5.2"
     }
 }
