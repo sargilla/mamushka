@@ -22,6 +22,7 @@
         "classmap": ["tests/TestCase.php"]
     },
     "require-dev": {
-        "illuminate/database": "^5.2"
+        "illuminate/database": "^5.2",
+        "illuminate/cache": "^5.2"
     }
 }

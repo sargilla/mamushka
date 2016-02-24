@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e396b388d76c57b87ae547dd9faf094a",
-    "content-hash": "ba8e52984073e28e2bff838db1139074",
+    "hash": "684733daffa55bf5ef18d18407cd4288",
+    "content-hash": "f4c95a8c9d2c2569a8aa59e1c475fb2e",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -122,12 +122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "ee541261e288205bf7191b6458edeb0f9e3ab756"
+                "reference": "d16a2083264419596430bfeacc6546c69d8e6a97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/ee541261e288205bf7191b6458edeb0f9e3ab756",
-                "reference": "ee541261e288205bf7191b6458edeb0f9e3ab756",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/d16a2083264419596430bfeacc6546c69d8e6a97",
+                "reference": "d16a2083264419596430bfeacc6546c69d8e6a97",
                 "shasum": ""
             },
             "require": {
@@ -169,10 +169,60 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-19 16:55:30"
+            "time": "2016-02-23 04:08:28"
         }
     ],
     "packages-dev": [
+        {
+            "name": "illuminate/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cache.git",
+                "reference": "66bd075da08f8409aa0f2048291eb8eadf148a6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/66bd075da08f8409aa0f2048291eb8eadf148a6c",
+                "reference": "66bd075da08f8409aa0f2048291eb8eadf148a6c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.3.*",
+                "illuminate/support": "5.3.*",
+                "nesbot/carbon": "~1.20",
+                "php": ">=5.6.4"
+            },
+            "suggest": {
+                "illuminate/database": "Required to use the database cache driver (5.3.*).",
+                "illuminate/filesystem": "Required to use the file cache driver (5.3.*).",
+                "illuminate/redis": "Required to use the redis cache driver (5.3.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Cache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Cache package.",
+            "homepage": "http://laravel.com",
+            "time": "2016-02-14 22:09:02"
+        },
         {
             "name": "illuminate/container",
             "version": "dev-master",
