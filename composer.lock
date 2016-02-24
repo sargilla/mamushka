@@ -4,8 +4,13 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "21b22dcc7a8704b3e32fe59d25e131c3",
     "content-hash": "981c7af803a30f5378df57511ed168ec",
+=======
+    "hash": "684733daffa55bf5ef18d18407cd4288",
+    "content-hash": "f4c95a8c9d2c2569a8aa59e1c475fb2e",
+>>>>>>> 95297f04cb0795ea7cfd3db3a30f7466333976b9
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -174,6 +179,7 @@
     ],
     "packages-dev": [
         {
+<<<<<<< HEAD
             "name": "doctrine/instantiator",
             "version": "dev-master",
             "source": {
@@ -196,16 +202,49 @@
                 "ext-phar": "*",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~2.0"
+=======
+            "name": "illuminate/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cache.git",
+                "reference": "66bd075da08f8409aa0f2048291eb8eadf148a6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/66bd075da08f8409aa0f2048291eb8eadf148a6c",
+                "reference": "66bd075da08f8409aa0f2048291eb8eadf148a6c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.3.*",
+                "illuminate/support": "5.3.*",
+                "nesbot/carbon": "~1.20",
+                "php": ">=5.6.4"
+            },
+            "suggest": {
+                "illuminate/database": "Required to use the database cache driver (5.3.*).",
+                "illuminate/filesystem": "Required to use the file cache driver (5.3.*).",
+                "illuminate/redis": "Required to use the redis cache driver (5.3.*)."
+>>>>>>> 95297f04cb0795ea7cfd3db3a30f7466333976b9
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "1.0.x-dev"
+=======
+                    "dev-master": "5.3-dev"
+>>>>>>> 95297f04cb0795ea7cfd3db3a30f7466333976b9
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+=======
+                    "Illuminate\\Cache\\": ""
+>>>>>>> 95297f04cb0795ea7cfd3db3a30f7466333976b9
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -214,6 +253,7 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
                     "homepage": "http://ocramius.github.com/"
@@ -226,6 +266,15 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
+=======
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Cache package.",
+            "homepage": "http://laravel.com",
+            "time": "2016-02-14 22:09:02"
+>>>>>>> 95297f04cb0795ea7cfd3db3a30f7466333976b9
         },
         {
             "name": "illuminate/container",
