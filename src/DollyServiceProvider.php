@@ -15,10 +15,10 @@ class DollServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache',function($expresion){
-            return "<?php if( !Sargilla\Dolly\RussianCaching::setUp{$expresion} ) {  ?>";
+            return "<?php if( ! app(Sargilla\Dolly\BladeDirective)->setUp{$expresion} ) {  ?>";
         });
         Blade::directive('endcache',function(){
-            return "<?php } echo Sargilla\Dolly\RussianCaching::tearDown() ?>";
+            return "<?php } echo app(Sargilla\Dolly\BladeDirective)->tearDown() ?>";
         });
     }
 
@@ -29,6 +29,8 @@ class DollServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(BladeDirective:class,function(){
+            return new BladeDirective();
+        })
     }
 }

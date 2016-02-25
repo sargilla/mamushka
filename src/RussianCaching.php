@@ -7,8 +7,6 @@ use Illuminate\Contracts\Cache\Repository as Cache;
 
 class RussianCaching
 {
-	protected static $keys = [];
-
 	protected $cache;
 
 	public function __construct(Cache $cache)
@@ -16,48 +14,29 @@ class RussianCaching
 			$this->cache = $cache;
 	}
 
-	public static function setUp($model)
+	public function put($key, $fragment)
 	{
-		static::$keys[] = $key = $model->getCacheKey();
+		$key = $this->normalizeCacheKey($key);
 
-		ob_start(); 
+		return $this->cache
+					->rememberForever($key, 
+						function () use ($fragment)
+						{
+							return $fragment;
+						});
+	}
+	public function has($key)
+	{
+		$key = $this->normalizeCacheKey($key);
 		
 		return $this->cache->has($key);
-
-	}
-
-	public function cache($key, $fragment)
-	{
-
-		if($key instanceof \Illuminate\Database\Eloquent\Model)
-		{
-			$key = $key->getCacheKey();
-		}
-		
-		return $this->cache
-					->rememberForever($key, function () use ($fragment)
-		{
-			return $fragment;
-		});
-	}
-	public function hasCached($key)
+	}	
+	protected function normalizeCacheKey($key)
 	{
 		if($key instanceof \Illuminate\Database\Eloquent\Model)
 		{
-			$key = $key->getCacheKey();
+			return $key->getCacheKey();
 		}
-		return $this->cache->has($key);
-	}
-	public static function tearDown()
-	{
-		$key = array_pop(static::$keys);
-
-		$html = ob_get_clean();
-
-		return $this->cache
-					->rememberForever($key, function () use ($fragment)
-		{
-			return $fragment;
-		});
+		return $key;
 	}
 }

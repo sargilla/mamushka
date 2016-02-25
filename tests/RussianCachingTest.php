@@ -13,11 +13,11 @@ class RussianCachingTest extends TestCase
 				new \Illuminate\Cache\ArrayStore
 			);
 
-			$doll = new RussianCaching($cache);
+			$cache = new RussianCaching($cache);
 
-			$doll->cache($post, '<div>view fragment</div>');
+			$cache->put($post, '<div>view fragment</div>');
 			
-			$this->assertTrue($doll->hasCached($post->getCacheKey()));
-			$this->assertTrue($doll->hasCached($post));
+			$this->assertTrue($cache->has($post->getCacheKey()));
+			$this->assertTrue($cache->has($post));
 		}
 }
