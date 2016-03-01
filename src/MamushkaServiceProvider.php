@@ -29,6 +29,8 @@ class MamushkaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(BladeDirective:class,function(){
+            return new BladeDirective();
+        })
     }
 }
