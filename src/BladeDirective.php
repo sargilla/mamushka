@@ -1,5 +1,7 @@
-<?php 
+<?php
+
 namespace Sargilla\Mamushka;
+
 /*
  * Blade Directive
  */

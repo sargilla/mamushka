@@ -29,8 +29,12 @@ class MamushkaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(BladeDirective:class,function(){
-            return new BladeDirective();
-        })
+        $this->app->singleton(BladeDirective::class, function(){
+            return new BladeDirective(
+                new RussianCaching(
+                    app('Illuminate\Contracts\Cache\Repository')
+                )
+            );
+        });
     }
 }

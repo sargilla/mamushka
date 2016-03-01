@@ -36,5 +36,5 @@ abstract class TestCase extends PHPUnit_Framework_TestCase
 }
 
 class Post extends \Illuminate\Database\Eloquent\Model{
-	use Sargilla\Mamushka\Cacheable;	
+    use \Sargilla\Mamushka\Cacheable;
 }

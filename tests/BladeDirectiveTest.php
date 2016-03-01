@@ -1,7 +1,7 @@
 <?php 
 
-use Sargilla\Dolly\RussianCaching;
-use Sargilla\Dolly\BladeDirective;
+use Sargilla\Mamushka\RussianCaching;
+use Sargilla\Mamushka\BladeDirective;
 
 
 class BladeDirectiveTest extends TestCase
