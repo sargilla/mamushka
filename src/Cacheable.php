@@ -1,6 +1,6 @@
 <?php
 
-namespace Sargilla\Dolly;
+namespace Sargilla\Mamushka;
 
 trait Cacheable
 {

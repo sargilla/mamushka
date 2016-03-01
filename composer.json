@@ -1,5 +1,5 @@
 {
-    "name": "sargilla/dolly",
+    "name": "sargilla/mamushka",
     "description": "Caching for Laravel",
     "license": "MIT",
     "keywords": ["laravel","cache"],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sargilla\\Dolly\\": "src/"
+            "Sargilla\\Mamushka\\": "src/"
         }
     },
     "autoload-dev": {

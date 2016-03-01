@@ -1,6 +1,6 @@
 <?php 
 
-use Sargilla\Dolly\RussianCaching;
+use Sargilla\Mamushka\RussianCaching;
 
 class RussianCachingTest extends TestCase
 {

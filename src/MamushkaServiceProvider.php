@@ -1,11 +1,11 @@
 <?php
 
-namespace Sargilla\Dolly;
+namespace Sargilla\Mamushka;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
-class DollServiceProvider extends ServiceProvider
+class MamushkaServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -15,10 +15,10 @@ class DollServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache',function($expresion){
-            return "<?php if( !Sargilla\Dolly\RussianCaching::setUp{$expresion} ) {  ?>";
+            return "<?php if( !Sargilla\Mamushka\RussianCaching::setUp{$expresion} ) {  ?>";
         });
         Blade::directive('endcache',function(){
-            return "<?php } echo Sargilla\Dolly\RussianCaching::tearDown() ?>";
+            return "<?php } echo Sargilla\Mamushka\RussianCaching::tearDown() ?>";
         });
     }
 
