@@ -1,5 +1,5 @@
 <?php 
-namespace Sargilla\Dolly;
+namespace Sargilla\Mamushka;
 /*
  * Blade Directive
  */
