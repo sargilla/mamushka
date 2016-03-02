@@ -22,7 +22,6 @@ return view('micontrolador.index', compact('controlador'));
 Y en las vistas 
 
 @cache($controlador)
-	<h1>Mi vista</h1>
 	@foreach ($controlador->items as $item)
 		echo $item;
 	@endforeach	
