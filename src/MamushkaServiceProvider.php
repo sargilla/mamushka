@@ -15,7 +15,7 @@ class MamushkaServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache',function($expresion){
-            return "<?php if( !Sargilla\Mamushka\BladeDirective::setUp{$expresion} ) {  ?>";
+            return "<?php if( !Sargilla\Mamushka\BladeDirective->setUp{$expresion} ) {  ?>";
         });
         Blade::directive('endcache',function(){
             return "<?php } echo Sargilla\Mamushka\BladeDirective::tearDown() ?>";
