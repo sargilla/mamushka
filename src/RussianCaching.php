@@ -8,7 +8,6 @@ use Illuminate\Contracts\Cache\Repository as Cache;
 class RussianCaching
 {
 	protected $cache;
-
 	public function __construct(Cache $cache)
 	{	
 			$this->cache = $cache;

@@ -15,10 +15,10 @@ class MamushkaServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache',function($expresion){
-            return "<?php if( !Sargilla\Mamushka\RussianCaching::setUp{$expresion} ) {  ?>";
+            return "<?php if( !Sargilla\Mamushka\BladeDirective::setUp{$expresion} ) {  ?>";
         });
         Blade::directive('endcache',function(){
-            return "<?php } echo Sargilla\Mamushka\RussianCaching::tearDown() ?>";
+            return "<?php } echo Sargilla\Mamushka\BladeDirective::tearDown() ?>";
         });
     }
 
