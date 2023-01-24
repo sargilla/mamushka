@@ -1,28 +1,33 @@
 {
-    "name": "sargilla/mamushka",
-    "description": "Caching for Laravel",
-    "license": "MIT",
-    "keywords": ["laravel","cache"],
-    "authors": [
-        {
-            "name": "santiago argilla",
-            "email": "sargilla@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "illuminate/support": "^5.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Sargilla\\Mamushka\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "classmap": ["tests/TestCase.php"]
-    },
-    "require-dev": {
-        "illuminate/database": "^5.2",
-        "illuminate/cache": "^5.2"
+  "name": "sargilla/mamushka",
+  "description": "Caching for Laravel",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "cache"
+  ],
+  "authors": [
+    {
+      "name": "santiago argilla",
+      "email": "sargilla@gmail.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sargilla\\Mamushka\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
+    ]
+  },
+  "require-dev": {
+    "illuminate/database": "^5.2",
+    "illuminate/cache": "^5.2"
+  }
 }
